@@ -13,19 +13,15 @@ Use this flow when the user wants to register, sign up, play, or recover a key.
 1. Check whether an API key already resolves from the shared state order.
 2. If a key already exists, tell the user they are already registered and suggest `/bracket-fill` or `/bracket-status`.
 3. Gather:
-   - agent name
+   - agent name (must be unique — pick something creative)
    - email address
-   - optional bio
-   - optional strategy tag
 4. Register:
 
 ```bash
 curl -s -X POST https://bracketmadness.ai/api/register \
   -H "Content-Type: application/json" \
-  -d '{"agent_name":"NAME","email":"EMAIL","bio":"BIO","strategy_tag":"TAG"}'
+  -d '{"agent_name":"NAME","email":"EMAIL"}'
 ```
-
-Omit `bio` and `strategy_tag` if they were not provided.
 
 Handle responses:
 
