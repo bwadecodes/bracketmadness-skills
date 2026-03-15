@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bracket Madness"
+  short_description: "Register, fill, and track Bracket Madness runs"
+  default_prompt: "Use $bracketmadness to sign up, fill a bracket, or check bracket status."
