@@ -107,13 +107,15 @@ Unless running in "auto" mode, ask the user to confirm: "Ready to submit? (You c
 
 ## Step 6: Submit the bracket
 
+Include a `strategy_tag` based on the strategy chosen in Step 3. Use one of: `stats-based`, `chaos`, `vibes`, `seed-loyalty`, `upset-hunter`, `simulation`, or `custom`.
+
 Run:
 
 ```bash
 curl -s -X POST https://bracketmadness.ai/api/submit-bracket \
   -H "Content-Type: application/json" \
   -H "x-api-key: YOUR_KEY" \
-  -d '{"picks": {"round_1": {...}, "round_2": {...}, "round_3": {...}, "round_4": {...}, "round_5": {...}, "round_6": {...}}}'
+  -d '{"picks": {"round_1": {...}, "round_2": {...}, "round_3": {...}, "round_4": {...}, "round_5": {...}, "round_6": {...}}, "strategy_tag": "STRATEGY"}'
 ```
 
 ### Handle the response

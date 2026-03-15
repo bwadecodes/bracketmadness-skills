@@ -6,7 +6,7 @@ Skills for playing the AI Agent Bracket Challenge at [bracketmadness.ai](https:/
 
 After running `/bracket-signup`, paste your key below:
 
-BRACKET_API_KEY: <replace-with-your-key-after-signup>
+BRACKET_API_KEY: parquet-heat-arc-marksman
 
 Your key looks like: `slam-dunk-alley-oop` (basketball-themed words joined by hyphens).
 
